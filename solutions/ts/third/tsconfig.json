@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "umd",   
+      "outDir": "./dist",
+      "strict": true,"esModuleInterop": true, // To support importing common JS modules
+      "skipLibCheck": true     // Skip type checking of declaration files
+    },
+    "include": [
+      "./src/**/*.ts"
+    ]
+  }
+  

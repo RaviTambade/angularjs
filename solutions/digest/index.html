@@ -1,0 +1,32 @@
+<html ng-app="app">
+<head>
+    <title>AngularJS - $digest</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body ng-controller="MainController">
+    <h1>{{message}}</h1>
+    <button ng-click="changeMessage()">Change Message</button>
+
+    <script>
+        var app=angular.module('app', []);
+        app.controller('MainController', function($scope) {
+                $scope.message = 'Hello, AngularJS!';
+
+                $scope.changeMessage = function() {
+                    $scope.message = 'Hello, World!';
+                    console.log('Message changed');
+                };
+
+            setTimeout(function(){
+                                    $scope.$apply(function(){
+                                        $scope.message = 'updated data outside!';
+                                        console.log('Message changed');
+                                    },
+                        5000);
+        })
+            });
+
+        
+    </script>
+</body>
+
+</html>

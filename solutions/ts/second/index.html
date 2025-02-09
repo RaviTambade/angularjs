@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular JS Services with TypeScript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="/dist/people.service.js"></script> <!-- Compiled TypeScript -->
+    <script src="/dist/user.service.js"></script> <!-- Compiled TypeScript -->
+    <script src="/dist/user.controller.js"></script> <!-- Compiled TypeScript -->
+    <script src="/dist/app.module.js"></script> <!-- Compiled TypeScript -->
+ 
+</head>
+<body>
+    <h2>AngularJS Sample Application</h2>
+    <div ng-controller="UserController">
+        <p>Enter a number: <input type="number" ng-model="number" /></p>
+        <button ng-click="getAll()">Get All Users</button>
+        <h2>Users</h2>
+        <ul>
+            <li ng-repeat="user in users">{{ user.name }}</li>
+        </ul>
+    </div>
+</body>
+</html>

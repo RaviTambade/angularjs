@@ -1,0 +1,46 @@
+<html>
+   <head>
+      <title>Angular JS Services</title>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">
+      </script>
+   </head>
+   
+   <body>
+      <h2>AngularJS Sample Application</h2>
+      <div ng-app = "mainApp" ng-controller = "UserController">
+         <p>Enter a number: <input type = "number" ng-model = "number" /></p>
+         <button ng-click = "getAll()">Get All Users</button>
+         <h2>Users</h2>
+        <ul>
+          <li ng-repeat="user in users">{{ user.name }}</li>
+        </ul>
+      </div>
+      
+      <script>
+        var mainApp = angular.module("mainApp", []);
+        
+        mainApp.factory('PeopleService', function() {
+        var factory = {};
+            
+        factory.getAll = function(a, b) {
+            return [{ name: 'Ravi Tambade', email: 'ravi.tambade@transflower.in' },
+                    { name: 'Sameer Patil', email: 'sameer.patil@gmail.com' },
+                    { name: 'Manisha Pant', email: 'manisha.pant@gmail.com' }]
+            }
+            return factory;
+         });
+
+         mainApp.service('UserService', function(PeopleService) {
+            this.getUsers = function(a) {
+               return PeopleService.getAll(a,a);
+            }
+         });
+         mainApp.controller('UserController', function($scope, UserService) {
+            $scope.getAll = function() {
+               $scope.users = UserService.getUsers($scope.number);
+            }
+         });
+      </script>
+      
+   </body>
+</html>

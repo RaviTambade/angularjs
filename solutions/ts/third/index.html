@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS MVC with TypeScript</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <!-- Include the compiled TypeScript files -->
+  <script src="/dist/app.module.js"></script>
+  <script src="/dist/user.service.js"></script>
+  <script src="/dist/user.controller.js"></script>
+</head>
+<body>
+  <div ng-controller="UserController">
+    <h2>List of Users</h2>
+    <ul>
+      <li ng-repeat="user in users">
+        <strong>{{ user.name }}</strong> - {{ user.email }}
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
