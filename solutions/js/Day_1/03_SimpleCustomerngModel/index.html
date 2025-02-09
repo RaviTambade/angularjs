@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="transflower">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Transflower Learning</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js"
+            data-semver="1.4.9">
+    </script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainController">
+    <form name="searchUser">
+          
+       <div>
+         <input type="input" placeholder="First Name" ng-model="firstName"/>
+      </div>
+       <div>
+         <input type="input" placeholder="Last name" ng-model="lastName"/>
+      </div>
+       <div>
+         <input type="input" placeholder="Location" ng-model="location"/>
+      </div>
+       <div>
+         <input type="input" placeholder="Mobile Number" ng-model="contactNumber"/>
+      </div>
+      
+     <div>
+       <input type="submit" value="show" ng-click="onSubmit()"/>
+       </div>
+     
+    </form>
+    <p>Hello {{firstName}}  {{lastName}} {{location}} {{contactNumber}} !</p>
+  </body>
+
+</html>

@@ -1,0 +1,29 @@
+<div>
+  <h3>Trainers List</h3>
+  <br/>
+<table>
+      <thead>
+        <th>name</th>
+        <th>location</th>
+        <th>technology</th>
+        <th>certification</th>
+        <th>salary</th>
+        <th>age</th>
+        <th>IsConsultant</th>
+        <th>Join Date</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="repo in repos | orderBy:repo.salary">
+          <td>{{repo.name |uppercase}}</td>
+          <td>{{repo.location}}</td>
+          <td>{{repo.technology}}</td>
+          <td>{{repo.certification}}</td>
+          <td>{{repo.salary | currency:"USD $"}}</td>
+          <td>{{repo.age}}</td>
+          <td>{{repo.consultant}}</td>
+          <td>{{repo.joinDate | date:'fullDate'}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    

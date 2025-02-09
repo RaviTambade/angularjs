@@ -1,0 +1,22 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>componentRouter</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  
+  <script src="angular.min.js"></script>
+    <script src="angular_1_router.js"></script>
+    <script src="app.js"></script>
+    <script src="customers.js"></script>
+    <script src="products.js"></script>
+  
+  <script type="text/javascript">
+    angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
+  </script>
+</head>
+<body ng-app="app">
+    <h1> TFL EStore</h1>
+    <app></app>
+</body>
+</html>

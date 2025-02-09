@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="transflower">
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.4.x" 
+    src="https://code.angularjs.org/1.4.9/angular.js" 
+    data-semver="1.4.9"></script>
+    <script src="customerHubService.js"></script>
+    <script src="app.js"></script>
+    <script src="github.js"></script>
+  </head>
+
+  <body ng-controller="MainController">
+      <h1>{{message}}</h1>
+      <p> Counter = {{counter}}</p> 
+    <form name="searchUser" ng-submit="search(username)" >
+       <input type="search" placeholder="Username to find" ng-model="username"></input>
+      <input type="submit" value="search"></input>
+    </form>
+    <div id="userDetails">
+    <p>Hello {{user.name}}!</p>
+    <p>ID: {{user.id}}</p>
+    <p>Location: {{user.location}}</p>
+    <P>Company:{{user.company}}</P>
+     <P>Blog:{{user.blog}}</P>
+    </div>
+  </body>
+</html>

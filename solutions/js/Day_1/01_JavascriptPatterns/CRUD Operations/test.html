@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Employee Details</title>
+    <script type="text/javascript" src="Scripts/Namespace.js"></script>
+    <script type="text/javascript" src="Scripts/data.js"></script>
+    <script type="text/javascript">
+        function insert() {
+            var newEmp = { 'EmpID': 11, 'FirstName': 'Virat', 'LastName': 'Kolhi', 'EmailID': 'viratk@transflower.in', 'Phone': 8425652145, 'Address': 'Delhi' };
+            Transflower.HR.insert(newEmp);
+            alert('Employee Added...')
+            Transflower.HR.showAllEmployees();
+        }
+        function update() {
+            var emp = { 'EmpID': 3, 'FirstName': 'Sanchita', 'LastName': 'Jadhav', 'EmailID': 'sanchitaj@transflower.in', 'Phone': 8562471230, 'Address': 'Mumbai' };
+            Transflower.HR.update(emp);
+            Transflower.HR.showAllEmployees();
+        }
+        function search() {
+            alert
+            var emp = { 'EmpID': 5, 'FirstName': 'Mayur', 'LastName': 'Patole', 'EmailID': 'mayur.p@transflower.in', 'Phone': 7845123658, 'Address': 'Nashik' };
+            var l = Transflower.HR.Employees.length;
+            var results = Transflower.HR.search(emp);
+            alert(results.length);
+            
+        }
+        function deleteEmp() {
+            var emp = { 'EmpID': 10, 'FirstName': 'Priya', 'LastName': 'Kumbhar', 'EmailID': 'priyak@transflower.in', 'Phone': 8526956230, 'Address': 'Akola' };
+            var l = Transflower.HR.Employees.length;
+            Transflower.HR.remove(emp);
+            Transflower.HR.showAllEmployees();
+        }
+   </script>
+</head>
+<body>
+    <button type="button" onclick="insert()">Add Employee</button>
+    <button type="button" onclick="update()">Update Employee</button>
+    <button type="button" onclick="search()">Search Employee</button>
+    <button type="button" onclick="deleteEmp()"> Remove </button>
+</body>
+</html>

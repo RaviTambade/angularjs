@@ -1,0 +1,6 @@
+http://www.c-sharpcorner.com/article/cross-site-request-forgery-in-Asp-Net-mvc/
+https://www.codeproject.com/Tips/879039/MVC-Anti-forgery-validator-for-HTTP-Headers
+https://docs.microsoft.com/en-us/aspnet/core/security/cross-site-scripting
+http://www.dotnet-programming.com/post/2015/04/12/How-to-Handle-Cross-Site-Scripting-in-ASPNET-MVC-Application.aspx
+
+https://www.codeproject.com/Articles/859579/Hack-proof-your-asp-net-applications-from-Session

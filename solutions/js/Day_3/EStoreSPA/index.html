@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html ng-app="transflower">
+<head>
+    <meta charset="utf-8" />
+    <title>Transflower Learning</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/producthub.js"></script>
+    <script src="scripts/controllers/product/productSearchController.js"></script>
+    <script src="scripts/controllers/product/productDetailController.js"></script>
+    <script src="scripts/controllers/product/productUpdateController.js"></script>
+    <script src="scripts/controllers/product/productIndexController.js"></script>
+    <script src="scripts/controllers/product/productDeleteController.js"></script>
+    <script src="scripts/controllers/product/productAddController.js"></script>
+     
+</head>
+<body >
+    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+      
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button"
+                        class="navbar-toggle"
+                        data-toggle="collapse"
+                        data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">EStore</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="active"><a href="http://localhost:9000/#/index" target="_blank">Home</a></li>
+                    <li><a href="http://www.transflower.in" target="_blank">Products</a></li>
+                    <li><a href="http://www.transflower.in" target="_blank">Services</a></li>
+                    <li><a href="http://www.transflower.in" target="_blank">Press Releases</a></li>
+                    <li><a href="/contact.html" target="_blank">About</a></li>
+                    <li><a href="http://www.transflower.in" target="_blank">Contact</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+     <h1>Transflower Learning</h1>
+     <div ng-controller="ProductIndexController">
+          <div ng-view></div>
+     </div>  
+</body>
+</html>
+
+    
+
+ 

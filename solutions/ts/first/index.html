@@ -2,7 +2,7 @@
 <html >
 <head>
     <title>AngularJS + TypeScript</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="./angular.min.js"></script>
     <script src="./dist/services/user.service.js"></script>
     <script src="./dist/services/api.service.js"></script>
     <script src="./dist/controllers/app.controller.js"></script>
@@ -21,6 +21,7 @@
           <p>{{ user.name }}</p> <!-- Assuming each user has a "name" property -->
         </div>
     </div>
+    
     <div ng-controller="LoginController as ctrl">
         <h2>Login</h2>
         <form ng-submit="ctrl.login()">

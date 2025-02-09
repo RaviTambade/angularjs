@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="transflower">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Transflower Learning</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="ProductController">
+   
+ 
+<h3>list Laptops based on Brand Motorola:</h3>
+
+  <select ng-model="currentBrand">
+     <option value="Apple">Apple</option>
+     <option value="Motorola">Motorola</option>
+     <option value="Samsung">Samsung</option>
+   </select>
+
+
+ <p><strong>All Products:</strong></p>
+    <ul class="list">
+        <li ng-repeat="product in products">{{product.Title}}</li>
+    </ul>
+
+
+<p><strong>Product List :Brand {{currentBrand.name}}</strong></p>
+    <ul class="list">
+       <!--<li ng-repeat="product in products | Brand">{{product.Title}}</li> -->
+       <li ng-repeat="product in products | Brand:this">{{product.Title}}</li>
+    </ul>
+  </body>
+
+</html>

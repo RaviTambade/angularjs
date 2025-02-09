@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="transflower">
+
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.4.x" 
+    src="https://code.angularjs.org/1.4.9/angular.js" 
+    data-semver="1.4.9"></script>
+    <script src="app.js"></script>
+    <style>
+      .seed {
+              color:white;
+              background-color:lightblue;
+              padding:20px;
+              font-family:"Courier New";
+      }
+
+      .transflower {
+              background-color:coral;
+              padding:40px;
+              font-family:Verdana;
+      }
+      </style>
+
+  </head>
+
+  <body ng-controller="MainController">
+    <p>Choose a class:</p>
+
+      <select ng-model="style">
+      <option value="seed">seed</option>
+      <option value="transflower">transflower</option>
+      </select>
+
+      <div ng-class="style">
+        <h1>Transflower Learning Pvt. Ltd.!</h1>
+        <p>We help help you to upgrade your skillset!</p>
+      </div>
+     
+  </body>
+
+</html>
+ 
