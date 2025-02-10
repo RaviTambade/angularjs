@@ -1,6 +1,5 @@
 In AngularJS, **modules** play a crucial role in organizing and managing different parts of an application. A module in AngularJS acts as a container for various components such as controllers, services, directives, filters, and even other modules. 
 
-Here’s a breakdown of the **role** of a module in AngularJS:
 
 ### 1. **Application Container**
    - A module is the central place where an AngularJS application is defined. Every AngularJS application needs at least one module, which is typically referred to as the "root module."
