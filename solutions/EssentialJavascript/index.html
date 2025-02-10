@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <script>
+        console.log("Head Block: Welcome to Javascript");
+    </script>
+</head>
+<body>
+    <!--Static HTML-->
+    <h2>FullStack Runtime</h2>
+
+    <ol id="olRuntime">
+        <li>.net</li>
+        <li>java</li>
+        <li>Node JS</li>
+    </ol>
+
+    <!-----Event handling -->
+    <button onclick="console.log('button is clicked');console.log('Yes action is performed'); ">Click me</button>
+    <button onclick="onPushMe()">Push me</button>
+    <button onclick="onButtonPushMe()">Try me</button>
+    <button onclick="onButtonTryMe()">Arrow function try me</button>
+
+    <script >
+        function  onPushMe(){
+            var count=0;
+            console.log('Push button is clicked');
+            console.log('Yes  Push action is performed');
+        };
+
+        var onButtonPushMe=function(){
+            var count=0;
+            console.log(' another way:Try button is clicked');
+            console.log('another way: Yes  Try action is performed');
+
+        }
+
+        var onButtonTryMe=()=>{
+            var count=0;
+            console.log(' another way:Try button is clicked');
+            console.log('another way: Yes  Try action is performed');
+
+        }
+
+      
+        var company="Transflower";
+        var status=false;
+        var person={
+            "lastname":"kothawade",
+            "email":"nayan.kothawade@gmail.com",
+            "age":24,
+            "isworking":false
+
+        };
+
+      var marks=[34,65,32,65,56];
+      var skills=["C++", "Java", "C#", "Python"];
+      var people=[
+            {"firstname":"Nayan","lastname":"kothawade","email":"nayan.kothawade@gmail.com", "age":24, "isworking":false },
+            {"firstname":"Maruti","lastname":"Patil","email":"nayan.kothawade@gmail.com", "age":24, "isworking":false },
+            {"firstname":"Naman","lastname":"kothawade","email":"nayan.kothawade@gmail.com", "age":24, "isworking":false },
+            {"firstname":"Sham","lastname":"kothawade","email":"nayan.kothawade@gmail.com", "age":24, "isworking":false },
+            {"firstname":"Kamal","lastname":"kothawade","email":"nayan.kothawade@gmail.com", "age":24, "isworking":false },
+            {"firstname":"Manoj","lastname":"kothawade","email":"nayan.kothawade@gmail.com", "age":24, "isworking":false },
+            {"firstname":"Ameer","lastname":"kothawade","email":"nayan.kothawade@gmail.com", "age":24, "isworking":false }
+      ];
+        console.log("Body Block : Welcome to Body Javascript");
+        console.log(marks);
+        console.log(people);
+
+        for(var i=0; i<marks.length;i++){
+            if(marks[i] > 35){
+                console.log("pass");
+            }
+            else{
+                console.log("fail");
+            }
+        }
+
+        //DOM : Document Object Model
+        //Runtime changes to DOM tree  you can use DOM API
+        //DOM Programming ----------DHTML
+         console.log("This is Ravi Tambade");
+         document.write("<h2>Welcome to Transflower</h2>");
+         document.write("<hr/>");
+         document.write("<ol> <li>Pune </li>  <li>Mumbai </li> <li>Chennai </li> <li>Delhi </li></ol>");
+
+        
+        var runtimeList=document.getElementById("olRuntime");
+       
+        var entry = document.createElement('li');
+        var textPythonNode1=document.createTextNode("Python");
+        entry.appendChild(textPythonNode1);
+        runtimeList.appendChild(entry);
+
+
+        var entry2 = document.createElement('li');
+        var textPythonNode2=document.createTextNode("Go");
+        entry2.appendChild(textPythonNode2);
+        runtimeList.appendChild(entry2);
+
+    </script>
+</body>
+</html>
