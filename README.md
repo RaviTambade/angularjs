@@ -95,3 +95,4 @@ Despite being replaced by **Angular (2+)**, **AngularJS** made a significant imp
 - AngularJS was officially deprecated in **2021**, with developers migrating to **Angular (2+)**, a more modern and robust framework.
 
 AngularJS’s legacy still impacts the development of modern JavaScript frameworks and continues to shape the way single-page applications (SPAs) are built.
+*************
