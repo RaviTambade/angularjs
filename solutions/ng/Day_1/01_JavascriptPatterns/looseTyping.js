@@ -1,5 +1,4 @@
  
-
 var x = 0; // creates variable x that holds a number
 
 var isNumber = typeof x == "number"; // Works but limited

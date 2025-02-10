@@ -1,0 +1,10 @@
+[
+    {"custid":1,"firstname":"Ravi", "lastname":"Tambade", "contactnumber":"9881735801", "email":"ravi.tambade@transflower.in", "imageurl":"/images/customers/ravit.jpg"},
+	{"custid":2,"firstname":"Sachin", "lastname":"Jadhav", "contactnumber":"9881735805", "email":"ravi.tambade@transflower.in", "imageurl":"/images/customers/ravit.jpg"},
+     {"custid":3,"firstname":"Manoj", "lastname":"Patil", "contactnumber":"9881735805", "email":"ravi.tambade@transflower.in", "imageurl":"/images/customers/ravit.jpg"},
+     {"custid":4,"firstname":"Sanika", "lastname":"Bhor", "contactnumber":"9881735601", "email":"ravi.tambade@transflower.in", "imageurl":"/images/customers/ravit.jpg"},
+     {"custid":5,"firstname":"Disha", "lastname":"Satpute", "contactnumber":"9881765801", "email":"ravi.tambade@transflower.in", "imageurl":"/images/customers/ravit.jpg"},
+     {"custid":6,"firstname":"Tejas", "lastname":"Pawale", "contactnumber":"9881735771", "email":"ravi.tambade@transflower.in", "imageurl":"/images/customers/ravit.jpg"},
+     {"custid":7,"firstname":"Ajinkya", "lastname":"Tambade", "contactnumber":"9881737801", "email":"ravi.tambade@transflower.in", "imageurl":"/images/customers/ravit.jpg"},
+     {"custid":8,"firstname":"Shreedhar", "lastname":"Patil", "contactnumber":"9881776501", "email":"ravi.tambade@transflower.in", "imageurl":"/images/customers/ravit.jpg"}
+]

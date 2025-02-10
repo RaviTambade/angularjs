@@ -2,8 +2,6 @@
 var studentcontroller = require('../controller/studentController');
 
 module.exports = function (app) {
-
-
     //routing to student controller's getALL()
     app.route('/student').get(studentcontroller.getAll);
 
@@ -15,6 +13,4 @@ module.exports = function (app) {
 
     //routing to student controller's insertStudent()
     app.route('/student').post(studentcontroller.insertStudent);
-
-
 };

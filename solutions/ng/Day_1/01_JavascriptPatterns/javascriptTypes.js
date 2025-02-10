@@ -1,5 +1,3 @@
-
-
 function log(s) {
  console.log(S);
 }
@@ -23,11 +21,9 @@ var product =   {
 };
 
 log(typeof b);
-
 log(typeof 1);             // "number"
 log(typeof 1.5);           // "number"
 log(typeof true);          // "boolean"
 log(typeof false);         // "boolean"
 log(typeof "hello world"); // "string"
 log("Type of product: " + typeof product ); 
-

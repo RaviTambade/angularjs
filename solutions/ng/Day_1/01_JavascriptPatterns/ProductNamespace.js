@@ -1,24 +1,21 @@
 ﻿//Writing like a class (Java/CSharp)
 
-
 Transflower.Ecommerce.Product = function () {
-    
+   
     create = function (pid, title, description, unitprice, stock) {
-        alert('Product Created');
-        
+        console.log('Product Created');      
     },
 
     readAll = function () {
-        alert('Reading Products');
-      
+        console.log('Reading Products');      
     },
 
     update = function (pid, title, description, unitprice, stock) {
-        alert('Updating Products');
+        console.log('Updating Products');
     },
 
     remove = function (pid) {
-        alert('Removing Products');
+        console.log('Removing Products');
     }
 
     sucess = function () {

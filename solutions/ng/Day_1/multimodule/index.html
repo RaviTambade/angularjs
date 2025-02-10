@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="transflower">
+<head>
+    <meta charset="utf-8" />
+    <title>Transflower Learning</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="userModule.js"></script>
+    <script src="appModule.js"></script>
+</head>
+
+<body>
+    <div ng-controller="MainController">
+        <p>Hello {{name}}!</p>
+        <p>{{person.firstName}} {{person.lastName}}</p>
+    </div>
+
+    <div ng-controller="UserController">
+        <h2>User Information</h2>
+        <p>Name: {{username}}</p>
+        <p>Age: {{age}}</p>
+    </div>
+</body>
+</html>

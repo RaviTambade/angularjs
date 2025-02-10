@@ -1,5 +1,4 @@
 
-
 function log(s) {
   $("#hello").append(s + "<br/>");
 }

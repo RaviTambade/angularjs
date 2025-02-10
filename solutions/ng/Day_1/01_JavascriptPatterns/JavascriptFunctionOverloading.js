@@ -9,7 +9,7 @@ function log(s) {
 
 //======================================================================
 //arguments object
-//Declaring parameter doesn't matter hear.
+//Declaring parameter doesn't matter here.
 //Available Inside Function Body Only
 // JavaScript 
 function show() {
@@ -23,6 +23,4 @@ function show() {
 show(1); // 1 
 show(1, 2); // 2 
 show('1a', '2b', '3c'); // 3
-
 log(foo());
-
