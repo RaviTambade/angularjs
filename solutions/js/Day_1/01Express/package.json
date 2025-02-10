@@ -1,0 +1,16 @@
+{
+  "name": "01express",
+  "version": "1.0.0",
+  "description": "Simple node js app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ravi Tambade",
+  "license": "ISC",
+  "dependencies": {
+    "01express": "file:",
+    "express": "^4.21.2"
+  }
+}

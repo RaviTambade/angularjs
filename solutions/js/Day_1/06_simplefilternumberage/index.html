@@ -5,9 +5,7 @@
     <title>Transflower Learning</title>
     <script>document.write('<base href="' + document.location + '" />');</script>
     <link rel="stylesheet" href="style.css" />
-    <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" 
-            data-semver="1.4.9">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="app.js"></script>
   </head>
   <body ng-controller="MainController">  
@@ -28,7 +26,7 @@
           <td>{{emp.location}}</td>
           <td>{{emp.technology}}</td>
           <td>{{emp.certification}}</td>
-          <td>{{emp.salary | currency }}</td>
+          <td>{{emp.salary | currency:'₹':2  }}</td>
           <td>{{emp.age}}</td>
           <td>{{emp.consultant}}</td>
         </tr>

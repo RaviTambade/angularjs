@@ -1,9 +1,3 @@
-var app = angular.module('transflower', []);
-
-app.controller('MainCtrl', function($scope) {
-  $scope.name = 'World';
-});
-
 var app=angular.module('transflower',[]);
 
 app.controller('MainController', function($scope){
@@ -25,5 +19,5 @@ app.controller('MainController', function($scope){
   $scope.orderByColumn = function(x) {
       $scope.order = x;
   };
- 
+
    });
