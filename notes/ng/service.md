@@ -1,3 +1,5 @@
+# ng service
+
 In **AngularJS**, a **service** is a fundamental building block used to share data and logic across different parts of your application. Services are **singleton objects** that provide specific functionality and are designed to be injected into controllers, directives, filters, or other services. 
 
 ### Role of a Service in AngularJS:
