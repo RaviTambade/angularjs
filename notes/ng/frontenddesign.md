@@ -1,3 +1,4 @@
+# Frontend Design using AngularJS (ng)
 When implementing the **front-end** for an application, especially in a framework like **AngularJS**, several core features are typically needed to ensure that the application is dynamic, responsive, and user-friendly. Here are some of the most common features needed for front-end development:
 
 ### 1. **Data Binding**
