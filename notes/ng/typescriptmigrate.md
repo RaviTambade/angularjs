@@ -1,3 +1,5 @@
+# ng Transitioning from JavaScript to TypeScript
+
 Transitioning from JavaScript to TypeScript for writing AngularJS applications is a great move! TypeScript brings **static typing**, **better tooling**, and **improved maintainability** to your codebase. Since you already have experience with AngularJS and JavaScript, the learning curve for TypeScript should be manageable. Here's a **step-by-step roadmap** to help you adopt TypeScript for AngularJS development:
 
 ---

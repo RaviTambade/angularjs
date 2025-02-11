@@ -1,3 +1,4 @@
+# ng $scope
 In **AngularJS**, `$scope` is an object that acts as a **bridge** between the **controller** and the **view**. It provides the context for expressions, making it possible to bind data between the model (the data in your controller) and the view (the HTML). Essentially, `$scope` is a JavaScript object that holds the application’s data and methods that are accessible in the **view** (HTML) via AngularJS directives and expressions.
 
 ### Key Points About `$scope`:
@@ -106,7 +107,7 @@ Here, the **parent scope** (`ParentController`) and **child scope** (`ChildContr
 
 While `$scope` is important for binding data in AngularJS applications, **Angular** (the later version, Angular 2+), introduced a more component-based approach with the **`@Input()` and `@Output()` decorators** and **services** instead of `$scope` to manage data and communication across components.
 
-# `$scope` vs `$rootScope`  (Difference)
+# `$scope` vs `$rootScope`  
 
 In AngularJS, `$scope` and `$rootScope` are both objects that allow you to share data between controllers, but they serve different purposes. Here's a detailed comparison of the two:
 

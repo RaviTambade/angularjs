@@ -1,3 +1,4 @@
+# ng Module
 In AngularJS, **modules** play a crucial role in organizing and managing different parts of an application. A module in AngularJS acts as a container for various components such as controllers, services, directives, filters, and even other modules. 
 
 

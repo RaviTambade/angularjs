@@ -1,3 +1,4 @@
+# ng Filters
 In **AngularJS**, **filters** are used to format or transform data before it's displayed to the user. Filters can be applied to expressions in the view (HTML) to modify how data is presented without altering the underlying data in the model. Filters are used to format things like dates, numbers, currencies, and text, or to even create custom transformations.
 
 ### Key Characteristics of AngularJS Filters:

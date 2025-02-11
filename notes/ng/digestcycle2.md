@@ -1,4 +1,4 @@
-## Digest cycle in AngularJS" 
+# ng Digest
 
 When someone refer to the digest cycle of something refers about the way or how something works with data change.
 

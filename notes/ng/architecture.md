@@ -1,4 +1,4 @@
-### **AngularJS Architecture**
+## **AngularJS Architecture**
 
 
 AngularJS is a **structural framework** for building dynamic web applications. Its architecture is designed to support **Model-View-Controller (MVC)** or **Model-View-ViewModel (MVVM)** design patterns. This allows developers to create modular, maintainable, and testable applications by separating concerns such as the user interface, business logic, and data handling.

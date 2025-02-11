@@ -1,3 +1,4 @@
+# ng Digest
 Understanding the **AngularJS digest cycle** is crucial for mastering how AngularJS handles data binding and updates the DOM. Let’s break it down in a simple and intuitive way:
 
 ---
