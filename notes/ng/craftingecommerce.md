@@ -13,7 +13,7 @@ When crafting an application architecture for an **eCommerce portal** using **An
 
 ### **Suggested AngularJS Application Architecture**
 
-Here’s a breakdown of how you might structure an eCommerce AngularJS application with these modules:
+Let us structure an eCommerce AngularJS application with these modules:
 
 #### 1. **Define AngularJS Application Module:**
 
