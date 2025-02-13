@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="transflower">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Transflower Learning</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainController">
+   <input type="submit" value="show" ng-click="search()"/>
+    <table>
+      <thead>
+        <th>name</th>  <th>location</th><th>technology</th><th>certification</th><th>salary</th> <th>age</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="emp in employees">
+          <td><a href="">{{emp.name | uppercase}}</a></td>
+          <td>{{emp.location}}</td>
+          <td>{{emp.technology}}</td>
+          <td>{{emp.certification}}</td>
+          <td>{{emp.salary  | number}}</td>
+          <td>{{emp.age}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

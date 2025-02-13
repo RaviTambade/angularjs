@@ -13,24 +13,24 @@ const appModule = angular.module('myApp', ['ngRoute']);
 appModule.config(['$routeProvider', ($routeProvider:any) => {
   $routeProvider
     .when('/home', {
-      templateUrl: 'home.html',  // Template for the home route
+      templateUrl: 'views/home.html',  // Template for the home route
       controller: 'HomeController',  // Controller for the home route
       controllerAs: 'homeCtrl'  // Use 'homeCtrl' as alias for the controller instance
     })
     .when('/about', {
-      templateUrl: 'about.html',  // Template for the about route
+      templateUrl: 'views/about.html',  // Template for the about route
       controller: 'AboutController',  // Controller for the about route
       controllerAs: 'aboutCtrl'  // Use 'aboutCtrl' as alias for the controller instance
     })
 
     .when('/contact', {
-      templateUrl: 'contact.html',  // Template for the contact route
+      templateUrl: 'views/contact.html',  // Template for the contact route
       controller: 'ContactController',  // Controller for the Contact route
       controllerAs: 'contactCtrl'  // Use 'contactCtrl' as alias for the controller instance
     })
 
     .otherwise({
-      redirectTo: '/home'  // Default route is home
+      redirectTo: 'home'  // Default route is home
     });
 }]);
 

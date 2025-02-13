@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>AngularJS + TypeScript</title>
+    <script src="./angular.min.js"></script>
+    <script src="./angular-route.min.js"></script>
+    <script src="./dist/controllers/home.controller.js"></script>
+    <script src="./dist/controllers/about.controller.js"></script>
+    <script src="./dist/controllers/contact.controller.js"></script>
+    <script src="./dist/controllers/parent.controller.js"></script>
+    <script src="./dist/controllers/child.controller.js"></script>
+    <script src="./dist/app.module.js"></script>
+</head>
+<body ng-app="myApp">
+  <h1>Single Page Application</h1>
+  <a href="#!/home">Home</a> | <a href="#!/about">About</a> |<a href="#!/contact">Contact</a> ||<a href="#!/parent">Parent</a>
+  <hr/>
+  <div ng-view></div> 
+  <!-- ngView directive will render the view based on the active route -->
+    </body>
+</html>

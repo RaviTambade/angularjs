@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="transflower">
+  <head>
+    <meta charset="utf-8" />
+    <title>Transflower Learning</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="MainController">  
+   <input type="submit" value="show" ng-click="search()"/>
+    <table>
+      <thead>
+        <th ng-click="orderByColumn('name')">name</th>
+        <th ng-click="orderByColumn('location')">location</th>
+        <th ng-click="orderByColumn('technology')">technology</th>
+        <th ng-click="orderByColumn('certification')">certification</th>
+        <th ng-click="orderByColumn('salary')">salary</th>
+        <th ng-click="orderByColumn('age')">age</th>
+        <th>IsConsultant</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="emp in employees| orderBy:emp.age">
+          <td><a href="">{{emp.name}}</a></td>
+          <td>{{emp.location}}</td>
+          <td>{{emp.technology}}</td>
+          <td>{{emp.certification}}</td>
+          <td>{{emp.salary | currency:'₹':2  }}</td>
+          <td>{{emp.age}}</td>
+          <td>{{emp.consultant}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
