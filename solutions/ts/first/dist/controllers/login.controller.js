@@ -17,5 +17,5 @@ var LoginController = /** @class */ (function () {
     LoginController.$inject = ['$scope'];
     return LoginController;
 }());
-
+ 
 //angular.module('myApp').controller('LoginController',['$scope', LoginController]);

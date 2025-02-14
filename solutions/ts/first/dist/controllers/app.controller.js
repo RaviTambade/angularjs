@@ -12,5 +12,5 @@ var MyController = /** @class */ (function () {
     MyController.$inject = ['$scope'];
     return MyController;
 }());
-
+ 
 //angular.module('myApp').controller('MyController', MyController);

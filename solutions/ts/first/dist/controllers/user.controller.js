@@ -13,5 +13,5 @@ var UserController = /** @class */ (function () {
     UserController.$inject = ['$scope', 'UserService'];
     return UserController;
 }());
-
+ 
 //angular.module('myApp').controller('UserController',  UserController);

@@ -22,6 +22,6 @@ var ApiService = /** @class */ (function () {
     ApiService.$inject = ['$http'];
     return ApiService;
 }());
-
+ 
 // Register the service with the AngularJS module
-//angular.module('myApp').service('ApiService', ApiService);
+angular.module('myApp').service('ApiService', ApiService);

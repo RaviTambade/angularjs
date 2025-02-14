@@ -1,4 +1,4 @@
-
+ 
 var ApiUserController = /** @class */ (function () {
     function ApiUserController($scope, apiService) {
         this.$scope = $scope;
@@ -46,5 +46,5 @@ var ApiUserController = /** @class */ (function () {
     ApiUserController.$inject = ['$scope', 'ApiService'];
     return ApiUserController;
 }());
-
-//angular.module('myApp').controller('ApiUserController', ApiUserController);
+ 
+angular.module('myApp').controller('ApiUserController', ApiUserController);

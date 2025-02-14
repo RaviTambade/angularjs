@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>AngularJS + TypeScript</title>
+    <script src="./angular.min.js"></script>
+    <script src="./dist/services/user.service.js"></script>
+    <script src="./dist/services/api.service.js"></script>
+    <script src="./dist/controllers/login.controller.js"></script>
+    <script src="./dist/controllers/user.controller.js"></script>
+    <script src="./dist/controllers/apiuser.controller.js"></script>
+    <script src="./dist/app.module.js"></script>
+</head>
+<body ng-app="myApp">
+  
+    
+    <div ng-controller="LoginController as ctrl">
+        <h2>Login</h2>
+        <form ng-submit="ctrl.login()">
+          <div>
+            <label>Username:</label>
+            <input type="text" ng-model="ctrl.username" />
+          </div>
+          <div>
+            <label>Password:</label>
+            <input type="password" ng-model="ctrl.password" />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p>{{ ctrl.message }}</p>
+      </div>
+      <hr/>
+
+      <div ng-controller="UserController as ctrl">
+        <h2>Users</h2>
+        <ul>
+          <li ng-repeat="user in ctrl.users">{{ user.name }}</li>
+        </ul>
+      </div>
+
+      <div ng-controller="ApiUserController">
+        <h2>Users</h2>
+        <ul>
+          <li ng-repeat="user in users">
+            <strong>{{ user.name }}</strong> - {{ user.email }}
+            <button ng-click="deleteUser(user.id)">Delete</button>
+          </li>
+        </ul>
+        
+        <h3>Create New User</h3>
+        <button ng-click="createUser()">Create User</button>
+      </div>
+
+    </body>
+</html>

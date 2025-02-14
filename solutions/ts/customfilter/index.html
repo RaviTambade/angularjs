@@ -4,11 +4,12 @@
     <title>AngularJS + TypeScript</title>
     <script src="./angular.min.js"></script>
     <script src="./dist/controllers/app.controller.js"></script>
-    <script src="./dist/directives/custom.directive.js"></script>
     <script src="./dist/app.module.js"></script>
 </head>
 <body ng-app="myApp">
-  <h3>Main Controller View:Custom Directive</h3>
-  <my-directive></my-directive>
+  <h1>Custom Filter</h1>
+  <div ng-controller="MainController as ctrl">
+    <p>{{ ctrl.message | uppercase }}</p>
+  </div>
   </body>
 </html>
