@@ -7,7 +7,7 @@ app.controller('MainController', function($scope) {
    $scope.Ravi.name = "Ravi Tambade";
    $scope.Ravi.technology  = ".NET";
    $scope.Ravi.certification= "MCT";
-   $scope.Ravi.age=42;
+   $scope.Ravi.age=49;
    $scope.Ravi.joinDate="1997-12-22";
    
    $scope.Rahul = {};
@@ -15,7 +15,7 @@ app.controller('MainController', function($scope) {
    $scope.Rahul.name = "Rahul Navale";
    $scope.Rahul.technology  = "OpenSource";
    $scope.Rahul.certification= "MCT";
-   $scope.Rahul.age=29;
+   $scope.Rahul.age=33;
    $scope.Rahul.joinDate="2004-2-2";
   
 });

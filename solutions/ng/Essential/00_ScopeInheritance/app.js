@@ -7,17 +7,13 @@ app.controller('CompanyController', function($scope){
 });
 
 app.controller('CourseController' , function($scope){
-  $scope.courses = ['Jump Start HTML5',
-                    'Jump Start CSS',
-                    'Jump Start Responsive Web Design',
+  $scope.courses = [
                     'Essential .NET',
                     'ASP.NET MVC',
-                    'SPA using Angular JS 1.5',
-                    'Universal Windows App Development',
+                    'SPA using Angular JS',
                     'Office 365 App Development',
                     'Node JS',
-                    'Core Java',
-                    'Adv. Java', 
+                    'Java',
                     ];
   $scope.name="Scope for CourseController";
 });

@@ -1,10 +1,7 @@
 
 var app=angular.module('transflower',[]);
  
-
-
 app.controller('ProductController', function($scope){
- 
   $scope.brands = [ {name:"Apple"},{name:"Motorola"},{name:"Samsung"}];
   $scope.currentBrand  = "Apple";
 
